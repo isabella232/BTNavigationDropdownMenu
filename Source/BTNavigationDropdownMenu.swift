@@ -372,6 +372,7 @@ open class BTNavigationDropdownMenu: UIView {
         if self.shouldChangeTitleText!{
             self.setMenuTitle(self.tableView.items[index] as! String);
         }
+    self.didSelectItemAtIndexHandler!(index)
     }
 
     func setupDefaultConfiguration() {
